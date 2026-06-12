@@ -5,6 +5,7 @@ export interface Exercise {
   options: string[];
   correctAnswer: number;
   explanation: string;
+  type?: 'multiple';
 }
 
 export interface ExamQuestion {
@@ -15,6 +16,7 @@ export interface ExamQuestion {
   correctAnswer?: number;
   codePrompt?: string;
   expectedOutput?: string;
+  explanation?: string;
 }
 
 export interface Project {
